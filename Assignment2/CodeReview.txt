@@ -4,3 +4,31 @@ Different naming conventions were applied on the class attributes. (daysActive v
 Clumsy, confusing naming convention for functions. ("public double loan()" - is it a setter? a getter? just a method? what does it do?
 Solutions:
 Will change the name of attributes and methods based on what they represent or what they compute, by giving them clean, straightforward and explicative names.
+
+
+Classes
+Problems: There is only one big class with several attributes and functions
+Solutions: Will divide the class into multiple classes, interfaces, enums
+
+Functions
+Problems:
+Solutions:
+
+Comments
+Problems:
+Solutions:
+
+Formatting
+Problems:
+Solutions:
+
+Exceptions
+Problems:
+Solutions:
+
+Other problems:
+The class did not Override the toString() method but it had a new one created ("to_String()") => will delete this method and override the toString() method.
+The class had a useless method: print() => will delete the method.
+Will move the constructor right after the attributes of the class.
+Deleted the temp variable inside the calculate() function. Simplified the formula.
+
