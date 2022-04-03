@@ -1,0 +1,6 @@
+Meaningful Names
+Problems:
+Different naming conventions were applied on the class attributes. (daysActive vs. loan_value)
+Clumsy, confusing naming convention for functions. ("public double loan()" - is it a setter? a getter? just a method? what does it do?
+Solutions:
+Will change the name of attributes and methods based on what they represent or what they compute, by giving them clean, straightforward and explicative names.
