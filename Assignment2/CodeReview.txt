@@ -11,7 +11,7 @@ Problems: There is only one big class with several attributes and functions
 Solutions: Will divide the class into multiple classes, interfaces, enums
 
 Functions
-Problems:
+Problems: The getters also print values => will create separate functions for printing.
 Solutions:
 
 Comments
@@ -19,16 +19,17 @@ Problems:
 Solutions:
 
 Formatting
-Problems:
-Solutions:
+Problems: The code was not formatted
+Solutions: CTRL + A => CTRL + Shift + F
 
 Exceptions
-Problems:
-Solutions:
+Problems: 
+Solutions: Added custom exceptions with meaningful names.
 
 Other problems:
 The class did not Override the toString() method but it had a new one created ("to_String()") => will delete this method and override the toString() method.
 The class had a useless method: print() => will delete the method.
 Will move the constructor right after the attributes of the class.
 Deleted the temp variable inside the calculate() function. Simplified the formula.
+Some functions were using this and some were not. Added it when necessary even though it was not wrong before.
 
