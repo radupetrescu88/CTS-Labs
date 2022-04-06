@@ -6,12 +6,10 @@ public class Broker {
 	
 	public static double calculateTotalBrokerFee(BankAccount[] accounts) {
 		double totalFee = 0.0;
-		BankAccount account;
 		//int temp = 365;
 		for (int i = 0; i < accounts.length; i++) {
-			account = accounts[i];
-			if (account.accountType == BankAccountType.PREMIUM || account.accountType == BankAccountType.SUPER_PREMIUM) 
-				totalFee += brokerFee * account.loanValueInRON * (Math.pow(account.accountRate, (account.daysActive / 365)-1));// interest-principal
+			if (accounts[i].accountType == BankAccountType.PREMIUM || accounts[i].accountType == BankAccountType.SUPER_PREMIUM) 
+				totalFee += brokerFee * accounts[i].loanValueInRON * (Math.pow(accounts[i].accountRate, (accounts[i].daysActive / 365)-1));// interest-principal
 		}
 		return totalFee;
 	}
